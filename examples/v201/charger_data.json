@@ -1,0 +1,43 @@
+{
+    "CP_1": {
+        "id": "CP_1",
+        "model": "RA6M4_EVK",
+        "location": "HCM VN",
+        "charger_status": "SuspendedEVSE",
+        "lastUsed": "Jun 06, 08:37 PM",
+        "note": "AS054-1 demo-in-box",
+        "connectorType": "Type 2",
+        "connectorStatus": "Occupied",
+        "power": "7.7 kW",
+        "lastSession": {
+            "dateTime": "Jun 05, 12:34 PM",
+            "status": "Completed",
+            "energy": 0.0,
+            "cost": "$5.67"
+        },
+        "timestamp": "2024-11-05T10:20:53Z",
+        "evse_id": 123,
+        "connector_id": 321,
+        "serial_number": "0000000001",
+        "vendor_name": "Renesas",
+        "firmware_version": "0.1.0",
+        "boot_reason": "PowerUp"
+    },
+    "CP_2": {
+        "id": "CP_2",
+        "model": "AS054",
+        "location": "BENGALURU IND",
+        "charger_status": "SuspendedEVSE",
+        "lastUsed": "Jun 06, 08:37 PM",
+        "note": "AS054 demo-in-box",
+        "connectorType": "Type 2",
+        "connectorStatus": "Unavailable",
+        "power": "7.7 kW",
+        "lastSession": {
+            "dateTime": "Jun 05, 12:34 PM",
+            "status": "Completed",
+            "energy": 0.0,
+            "cost": "$5.67"
+        }
+    }
+}
