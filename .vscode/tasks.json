@@ -1,0 +1,36 @@
+{
+  "tasks": [
+    {
+      "label": "start-jlink",
+      "type": "shell",
+      // check if the JLinkRemoteServerCLExe is running, if not, start it
+      "command": "ssh `whoami`@172.29.145.145 'ps aux -u `whoami` | grep \"JLinkRemoteServerCLExe\" | grep -v grep > /dev/null || /opt/SEGGER/JLink/JLinkRemoteServerCLExe -Port 19023 -SelectEmuBySN 831285156'",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "custom",
+        "pattern": {
+          "regexp": "^(.*)$"
+        },
+        "background": {
+          "activeOnStart": false,
+          "beginsPattern": ".*",
+          "endsPattern": ".*"
+        }
+      },
+      "presentation": {
+        "reveal": "never"
+      }
+    },
+    {
+      "label": "stop-jlink",
+      "type": "shell",
+      "command": "ssh `whoami`@172.29.145.145 'pkill -u `whoami` -f \"JLinkRemoteServerCLExe\"'",
+      "isBackground": false,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "never",
+      }
+    }
+  ],
+  "version": "2.0.0"
+}
