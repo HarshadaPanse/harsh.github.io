@@ -37,3 +37,7 @@ jobs:
       env:
         TAG_VERSION: ${{ steps.context.outputs.TAG_VERSION }}
         PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+
+    - name: Run Python app
+      run: |
+      ./examples/v201/central_system.py
